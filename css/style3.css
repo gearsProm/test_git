@@ -157,6 +157,7 @@ text-align: center;
 	font-size: 26px;
 	line-height: 65px;
 	color: #000000;
+	padding: 34px 0 16px 0;
 }
 .page {
 	
@@ -267,6 +268,8 @@ line-height: 19px;
 	grid-template-columns: 93px 94.5px 94.5px 94.5px 94.5px ;
 	border-left: 3px solid #FFEAA5;
 	line-height: 48px;
+	border-bottom: 1px solid #EEEEF2;
+	margin-right: 20px;
 }
 .first {
 	
@@ -370,11 +373,22 @@ line-height: 20px;
 }
 .page-block__number {
 }
-.page-block__item--spec {
+.page-block__item-spec {
+	display: flex;
+	justify-content: flex-end;
+}
+.special {
+	display: inline-flex;
 	padding: 5px 7px;
 	background: #EEEEF2;
 	border-radius: 4px;
-	
+	margin-right: 10px;
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: #363636;
 }
 /*-----------------------------------------*/
 .footer {
