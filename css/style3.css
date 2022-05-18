@@ -342,15 +342,28 @@ line-height: 20px;
 	min-height: 48px;
 	box-shadow: 0px 1px 0px #EEEEF2, inset 0px 1px 0px #EEEEF2;
 	align-items: center;
+	
 }
 .page-block__master:hover {
 	background-color: #F9F9FC;
 }
 .page-block__control {
+	grid-column-start: 1;
+	grid-column-end: 12;
 	background-color: #FFFFFF;
 	margin: 0 20px 0 20px;
 	display: grid;
-	grid-template-columns: 178px 93px 94.5px 94.5px 94.5px 94.5px 93px 94.5px 94.5px 94.5px 94.5px ;
+	grid-template-columns: 178px 93px 94.5px 94.5px 94.5px 94.5px 93px 94.5px 94.5px 94.5px 74.5px ;
+}
+.page-block__control-row {
+	display: grid;
+	grid-column-start: 1;
+	grid-column-end: 12;
+	grid-template-columns: 178px 93px 94.5px 94.5px 94.5px 94.5px 93px 94.5px 94.5px 94.5px 74.5px ;
+	border-top: 1px solid #EEEEF2;
+}
+.page-block__control-row:hover {
+	background-color: #F9F9FC;
 }
 .page-block__item {
 	display: inline-block;
