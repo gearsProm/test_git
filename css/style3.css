@@ -343,6 +343,15 @@ line-height: 20px;
 	box-shadow: 0px 1px 0px #EEEEF2, inset 0px 1px 0px #EEEEF2;
 	align-items: center;
 }
+.page-block__master:hover {
+	background-color: #F9F9FC;
+}
+.page-block__control {
+	background-color: #FFFFFF;
+	margin: 0 20px 0 20px;
+	display: grid;
+	grid-template-columns: 178px 93px 94.5px 94.5px 94.5px 94.5px 93px 94.5px 94.5px 94.5px 94.5px ;
+}
 .page-block__item {
 	display: inline-block;
 	padding-left: 8px;
