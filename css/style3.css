@@ -93,6 +93,8 @@ background: #121212;
 	background: #121212;
 	border: 1px solid #292929;	
 	text-align: center;
+	display: flex;
+	flex-grow: 1;
 }
 .menu__item:hover {
 	background: #1C2133;
@@ -120,6 +122,11 @@ line-height: 38px;
 color: #4081FF;
 align-items: center;
 text-align: center;
+} 
+@media (max-width: 704px) {
+	.menu__link span {
+		display: none;
+	}
 } 
 .menu__item_log {
 	background: url('../image/home/logo4.jpg') left no-repeat ;
@@ -207,18 +214,19 @@ text-align: center;
 
 
 .page-block__menu--stack {
+		font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
 	grid-column: 1 / 2 ;
 	grid-row: 1 / 4 ;
 	padding: 48px 0 48px 20px;
 	background: #F9F9FC;
-border: 1px solid #EEEEF2;
-display: flex;
-align-items: center
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 19px;
+	border: 1px solid #EEEEF2;
+	display: flex;
+	align-items: center
+
 }
 
 .abox {
@@ -352,7 +360,7 @@ line-height: 20px;
 	line-height: 16px;
 	color: #363636;
 	padding: 0 30px;
-	
+	padding-bottom: 30px;
 }
 .page-block__menu {
 	display: grid;
@@ -365,13 +373,13 @@ line-height: 20px;
 	
 }
 .page-block__item-head {
-	
+	padding-left: 30px;
 }
 .page-block__master {
-	height: 48px;
+	
 	/* box-shadow: 0px 1px 0px #EEEEF2, inset 0px 1px 0px #EEEEF2; */
 	align-items: center;
-	
+	border-top: 1px solid #EEEEF2;
 }
 .page-block__master:hover {
 	background-color: #F9F9FC;
@@ -383,6 +391,10 @@ line-height: 20px;
 	margin: 0 20px 0 20px;
 	display: grid;
 	grid-template-columns: 178px 93px 94.5px 94.5px 94.5px 94.5px 93px 94.5px 94.5px 94.5px 74.5px ;
+}
+.page-block__control:last-child {
+	border-bottom: 1px solid #EEEEF2;
+	margin-bottom: 19px;
 }
 .page-block__control-row {
 	display: grid;
@@ -411,6 +423,9 @@ line-height: 20px;
 }
 .page-block__item-next:last-child {
 	border-left: 1px solid #EEEEF2;
+	margin-top: 10px;
+	height: 28px;
+	align-items: center;
 }
 .page-block__item--first {
 	display: inline-block;
@@ -422,9 +437,11 @@ line-height: 20px;
 }
 .green {		
 	color: #5BB653;
+	font-weight: 400;
 }
 .red {	
 	color: #DE5555;
+	font-weight: 400;
 }
 .page-block__number {
 }
