@@ -247,7 +247,7 @@ text-align: center;
 	grid-row-start: 1;
 	grid-row-end: 4;
 	display: grid;
-	grid-template-columns: 93px 94.5px 94.5px 94.5px 94.5px ;
+	grid-template-columns: repeat(5,20%);
 	background: #F1FDFF;
 	border-left: 3px solid #BBDDE2;
 }
@@ -255,7 +255,7 @@ text-align: center;
 	grid-column-start: 2;
 	grid-column-end: 7;
 	display: grid;
-	grid-template-columns: 93px 94.5px 94.5px 94.5px 94.5px ;
+	grid-template-columns: repeat(5,20%);
 	border-left: 3px solid #BBDDE2;
 	line-height: 48px;
 	align-items: center;
@@ -266,7 +266,7 @@ text-align: center;
 	grid-row-start: 1;
 	grid-row-end: 4;
 	display: grid;
-	grid-template-columns: 93px 94.5px 94.5px 94.5px 94.5px ;
+	grid-template-columns: repeat(5,20%);
 	background: #FFFCF2;
 	border-left: 3px solid #FFEAA5;
 }
@@ -274,11 +274,11 @@ text-align: center;
 	grid-column-start: 7;
 	grid-column-end: 12;
 	display: grid;
-	grid-template-columns: 93px 94.5px 94.5px 94.5px 94.5px ;
+	grid-template-columns: 20% 20% 20% 20% 20%;
 	border-left: 3px solid #FFEAA5;
 	line-height: 48px;
 	/*border-bottom: 1px solid #EEEEF2;*/
-	margin-right: 20px;
+	/*margin-right: 20px;*/
 }
 .first {
 	font-family: 'Roboto';
@@ -369,7 +369,7 @@ line-height: 20px;
 }
 .coloms {
 	display: grid;
-	grid-template-columns: 198px 93px 94.5px 94.5px 94.5px 94.5px 93px 94.5px 94.5px 94.5px 94.5px ;
+	grid-template-columns: 1fr 8.25% 8.25% 8.25% 8.25% 8.25% 8.25% 8.25% 8.25% 8.25% 8.25%  ;
 	
 }
 .page-block__item-head {
@@ -380,17 +380,19 @@ line-height: 20px;
 	/* box-shadow: 0px 1px 0px #EEEEF2, inset 0px 1px 0px #EEEEF2; */
 	align-items: center;
 	border-top: 1px solid #EEEEF2;
+	
 }
 .page-block__master:hover {
 	background-color: #F9F9FC;
+	
 }
 .page-block__control {
 	grid-column-start: 1;
 	grid-column-end: 12;
 	background-color: #FFFFFF;
-	margin: 0 20px 0 20px;
+	
 	display: grid;
-	grid-template-columns: 178px 93px 94.5px 94.5px 94.5px 94.5px 93px 94.5px 94.5px 94.5px 74.5px ;
+	
 }
 .page-block__control:last-child {
 	border-bottom: 1px solid #EEEEF2;
@@ -400,7 +402,7 @@ line-height: 20px;
 	display: grid;
 	grid-column-start: 1;
 	grid-column-end: 12;
-	grid-template-columns: 178px 93px 94.5px 94.5px 94.5px 94.5px 93px 94.5px 94.5px 94.5px 74.5px ;
+	
 	border-top: 1px solid #EEEEF2;
 }
 .page-block__control-row:hover {
@@ -412,7 +414,7 @@ line-height: 20px;
 }
 .page-block__item-main {
 	display: grid;
-	grid-template-columns: 94.5px 94.5px ;
+	grid-template-columns: 1fr 1fr;
 	grid-column: span 2;
 	border-left: 1px solid #EEEEF2;
 	
