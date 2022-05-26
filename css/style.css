@@ -52,7 +52,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 ._container {
 	max-width: 1230px;
 	margin: 0 auto;
-	padding: 0 5px;
+	padding: 0 15px;
 }
 ._ibg {
 	
@@ -62,94 +62,56 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	left: 65.88%;
 	top: 15.24%;
 }
-.header {
-	position: absolute;
+.header {	
 	width: 100%;
 	left: 0;
 	top: 0;
 	z-index: 50;
+	background: #121212;
 }
 .header__container {
 	min-height: 96px;
 	align-items: center;
-	background: #121212;
-}
-
-.header__menu {
 	
-max-height: 98px;
 }
-
+.header__menu {	
+min-height: 98px;
+background: #121212;
+}
 @media (max-width: 550px) {
 	.header__menu {
 		display: flex;
-		flex-wrap: wrap;
-		
+		flex-wrap: wrap;		
 	}
 }
-
 .menu__list {
 	display: flex;	
 	max-width: 1230px;
 }
-
 @media (max-width: 550px) {
 	.menu__list {
 		display: flex;
-		flex-wrap: wrap;
-		
+		flex-wrap: wrap;		
 	}
 }
-
-
-
 .menu__item {
 	margin: 0 -1px;
 	padding: 28px 19px;
 	background: #121212;
 	border: 1px solid #292929;	
 	text-align: center;
+	display: flex;
+	flex-grow: 1;
 }
-/*
-@media (max-width: 973px) {
-	.menu__item {
-		max-height: 58px;
-		display: flex;
-		padding: 18px 8px;
-	}	
-}
-
-.menu__link-log {
-	margin: -28px 0 0 0;
-}
-*/
 .menu__item:hover {
 	background: #1C2133;
 }
-/*
-@media (max-width: 950px) {
-	.menu__item {		
-		padding: 18px 9px;
-		
-	}
-} */
-/*
-.menu__item span {
-	display: inline-block
-	font-weight: 700;
-	font-size: 21px;
-	line-height: 38px;
-	color: #FFFFFF;
-	position: absolute;
-	top: 28px;
-} */
 .menu__item_buffer {
 	width: 280px;
 	margin: 0 -1px;
 	padding: 28px 19px;
 	border: 1px solid #292929;
 }
-
 @media (max-width: 1230px) {
 	.menu__item_buffer {
 		width: 50px;
@@ -168,20 +130,17 @@ color: #4081FF;
 align-items: center;
 text-align: center;
 } 
-/*
-@media (max-width: 965px) {
-	.menu__link {
-		font-size: 18px;
-		line-height: 24px;
+@media (max-width: 704px) {
+	.menu__link span {
+		display: none;
 	}
-} */
+} 
 .menu__item_log {
 	background: url('../image/home/logo4.jpg') left no-repeat ;
 	width: 289px;
 	border: 1px solid #292929;
 	display: flex;
 }
-
 @media (max-width: 950px) {
 	.menu__item_log {
 	background: url('../image/home/logo.png') left no-repeat ;
@@ -196,14 +155,10 @@ text-align: center;
 	min-width: 48px;
 	}
 } 
-/*
-.menu__link img {
-	border: 1px solid #292929;
-	}
-	*/
 .current {
 	color: white;
 }
+/*-----------------*/
 .page {
 	flex: 1 1 auto;
 	width: 100%;	
